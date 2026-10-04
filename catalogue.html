@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Catalogue - Online Book Store</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f8f9fa;
+}
+
+.book-card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.search-box{
+    max-width:500px;
+    margin:auto;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand fw-bold fs-3" href="#">
+    <span class="text-warning">Book</span>
+    <span class="text-white">Verse</span>
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="catalogue.html">Catalogue</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="cart.html">
+Cart (<span id="cartCount">0</span>)
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<!-- Heading -->
+
+<div class="container mt-5">
+
+<h2 class="text-center mb-4">
+Book Catalogue
+</h2>
+
+<div class="search-box mb-5">
+
+<input
+type="text"
+class="form-control"
+id="searchInput"
+placeholder="Search Books...">
+
+</div>
+
+<div class="row" id="bookContainer">
+
+<!-- Book 1 -->
+
+<div class="col-md-4 mb-4 book-item">
+
+<div class="card shadow">
+
+<img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5 class="card-title">
+Java Programming
+</h5>
+
+<p class="card-text">
+₹499
+</p>
+
+<a href="book-details.html"
+class="btn btn-info">
+Details
+</a>
+
+<button
+class="btn btn-primary addCart">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Book 2 -->
+
+<div class="col-md-4 mb-4 book-item">
+
+<div class="card shadow">
+
+<img src="https://images.unsplash.com/photo-1512820790803-83ca734da794"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5 class="card-title">
+Web Development
+</h5>
+
+<p class="card-text">
+₹599
+</p>
+
+<a href="book-details.html"
+class="btn btn-info">
+Details
+</a>
+
+<button
+class="btn btn-primary addCart">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Book 3 -->
+
+<div class="col-md-4 mb-4 book-item">
+
+<div class="card shadow">
+
+<img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5 class="card-title">
+Data Structures
+</h5>
+
+<p class="card-text">
+₹699
+</p>
+
+<a href="book-details.html"
+class="btn btn-info">
+Details
+</a>
+
+<button
+class="btn btn-primary addCart">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Book 4 -->
+
+<div class="col-md-4 mb-4 book-item">
+
+<div class="card shadow">
+
+<img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5 class="card-title">
+Python Basics
+</h5>
+
+<p class="card-text">
+₹549
+</p>
+
+<a href="book-details.html"
+class="btn btn-info">
+Details
+</a>
+
+<button
+class="btn btn-primary addCart">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Book 5 -->
+
+<div class="col-md-4 mb-4 book-item">
+
+<div class="card shadow">
+
+<img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5 class="card-title">
+Machine Learning
+</h5>
+
+<p class="card-text">
+₹899
+</p>
+
+<a href="book-details.html"
+class="btn btn-info">
+Details
+</a>
+
+<button
+class="btn btn-primary addCart">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Book 6 -->
+
+<div class="col-md-4 mb-4 book-item">
+
+<div class="card shadow">
+
+<img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5 class="card-title">
+Computer Networks
+</h5>
+
+<p class="card-text">
+₹749
+</p>
+
+<a href="book-details.html"
+class="btn btn-info">
+Details
+</a>
+
+<button
+class="btn btn-primary addCart">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let cart = 0;
+
+const cartCount =
+document.getElementById("cartCount");
+
+document
+.querySelectorAll(".addCart")
+.forEach(button => {
+
+button.addEventListener("click", () => {
+
+cart++;
+
+cartCount.innerText = cart;
+
+alert("Book Added to Cart!");
+
+});
+
+});
+
+document
+.getElementById("searchInput")
+.addEventListener("keyup", function(){
+
+let value =
+this.value.toLowerCase();
+
+let books =
+document.querySelectorAll(".book-item");
+
+books.forEach(book => {
+
+let title =
+book.querySelector(".card-title")
+.innerText.toLowerCase();
+
+if(title.includes(value)){
+book.style.display="block";
+}
+else{
+book.style.display="none";
+}
+
+});
+
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
